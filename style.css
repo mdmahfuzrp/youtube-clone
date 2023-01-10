@@ -3,4 +3,214 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #f1f1dcea;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: #0F0F0F;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
+}
+body{
+    background-color: #0F0F0F;
+    overflow: hidden;
+}
+/* Multiple tag have this style */
+.circle-bg{
+    padding: 11px 13px;
+    background-color: #0F0F0F;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+.circle-bg:hover{
+    background-color: #272727;
+}
+.sign-in-button{
+    background: transparent;
+    border: 1px solid #343333e9;
+    color: #3C9DEF;
+    padding: 6px 9px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.sign-in-button:hover{
+    background-color: #263850;
+    cursor: pointer;
+    border: 1px solid #263850;
+}
+.sign-in-button i{
+    color: #3C9DEF;
+    border: 1px solid #3C9DEF;
+    padding: 3px 4px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+/* Header Style */
+header{
+    padding: 8px 15px;
+}
+header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .nav-left .brand-name{
+    margin-left: 10px;
+    margin-bottom: -8px;
+}
+header nav .nav-left{
+    display: flex;
+    align-items: center;
+}
+header nav .nav-left img{
+    width: 30px;
+}
+header nav .nav-left img.name{
+    width: 60px;
+    margin-left: -2px;
+}
+
+header nav .nav-mid{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+header nav .nav-mid .search-bar{
+    width: 100%;
+    display: flex;
+}
+header nav .nav-mid .search-bar input{
+    background: transparent;
+    border: 1px solid #272727;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 17px;
+    width: 90%;
+    padding: 7px 15px;
+}
+header nav .nav-mid .search-bar input:focus{
+    border: 1px solid #3c9eefd3;
+}
+header nav .nav-mid .search-bar .icon{
+    background-color: #272727;
+    width: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+header nav .nav-mid .circle-bg{
+    margin-left: 10px;
+}
+header nav .nav-right .circle-bg{
+    padding: 7px 14px;
+}
+/* Main Section Styles */
+main{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+/* Left Navbar Styles */
+.left-section{
+    overflow: scroll;
+    max-height: 100vh;
+}
+.left-section .container{
+    border-top: 1px solid #272727;
+    padding: 10px 0 10px 15px;
+}
+
+.left-section .first{
+    border-top: none;
+}
+.left-section .container li{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.left-section .container li.first:first-child{
+    background: #7876762d;
+    cursor: pointer;
+}
+.left-section .container li.first:first-child:hover{
+    background: #78767674;
+    cursor: pointer;
+}
+
+.left-section .container li:hover{
+    background: #7876762d;
+    cursor: pointer;
+}
+.left-section .container li i{
+    margin-right: 20px;
+    font-size: 17px;
+}
+.sign-in-nav{
+    border-top: 1px solid #272727;
+    padding: 10px 0 13px 28px;
+}
+.sign-in-nav p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.left-section .sign-in-option{
+    width: fit-content;
+}
+.left-section h4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.left-section .container img{
+    width: 30px;
+    margin-right: 18px;
+}
+.left-section .container img.music{
+    width: 22px;
+}
+.left-section .container img.kids{
+    margin-left: -5px;
+}
+.left-section .container img.tv{
+    margin-left: -4px;
+}
+.left-section .last{
+    margin-left: 28px;
+}
+.left-section .last li{
+    line-height: 17px;
+    list-style: none;
+}
+.left-section .last li a{
+    font-size: 12px;
+    color: rgb(186, 185, 185);
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.left-section .break{
+    margin-bottom: 13px;
+}
+.left-section .last span{
+    font-size: 12px;
+    font-weight: 300;
+    color: gray;
+    margin-top: 18px;
+    display: block;
+}
+/* Right Section Styles */
+.right-section{
+    overflow: scroll;
 }
